@@ -278,15 +278,9 @@ a:active {color:white;}
     width: 500px;
     padding-right: 200px;
     padding-left: 500px;
+	    overflow: auto;
 }
 .works_list {
     font-size: 25px;
     padding-left: 50px;
-}
-.thank {
-    position: absolute;
-    width: 0px;
-    margin-top: calc(50% - 500px);
-    font-size: 100px;
-    left: 6640px;
 }

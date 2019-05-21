@@ -17,9 +17,7 @@ $(window).scroll(function() {
 	$('.layout.call').css({
 		'left':(-scroll+5240)+'px',
 	});
-		$('.thank').css({
-		'left':(-scroll+6540)+'px',
-	});
+
 	
 	if (scroll>1000&&circle){
 		new_element=document.createElement("script");
