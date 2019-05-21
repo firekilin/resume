@@ -1,13 +1,12 @@
 body {
     margin: 0px;
-    height: 7680px;
+    height: 6500px;
 }
-img.pc {
-    margin-left: calc(50% - 200px);
-    height: calc(45% - 50px);
-    max-height: 400px;
-    margin-top: 50px;
-}
+
+img.pc {margin-top: calc(5%);height: 20%;margin-left: calc(50% - 100px);}
+a:link {color: white;}
+a:visited {color: white;}
+a:active {color:white;}
 
 .background {
     position: fixed;
@@ -19,19 +18,26 @@ img.pc {
     font-family: 微軟正黑體;
 }
 
-
-
-.personal {
+.layout {
     position: absolute;
     top: 5%;
-    left: 100px;
-    width: calc(100% - 100px);
     height: 90%;
     background: #82A3A1;
 }
 
+/*個人檔案*/
+
+.personal {
+    left: 100px;
+    width: 1000px;
+    padding-right: 500px;
+    z-index: 5;
+    /* overflow: hidden; */
+}
+
 .personal_content {
-    position: relative;
+    position: absolute;
+    width: calc(100% - 500px);
     height: 100%;
 }
 
@@ -42,10 +48,17 @@ img.pc {
     width: calc(100% - 100px);
     text-align: center;
     border-bottom: 5px white solid;
-    margin-bottom: 20px;
-    height: calc(10% - 40px);
+    line-height: 200%;
 }
-
+.saying {
+    font-size: 2em;
+    margin-left: 50px;
+    width: calc(100% - 100px);
+    text-align: center;
+    border-bottom: 5px white solid;
+    margin-bottom: 20px;
+    line-height: 200%;
+}
 .p_c_content {
     text-align: center;
     font-size: 1.5em;
@@ -60,4 +73,220 @@ img.pc {
     height: calc(20% - 20px);
 }
 
-.p_c_icon .fab, .p_c_icon .fas {font-size: 5em;margin-left: 25px;margin-right: 25px;}
+.p_c_icon .fab,
+.p_c_icon .fas {
+    font-size: 5em;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/*專業技能*/
+
+.ability {
+    left: 1600px;
+    width: 1200px;
+    padding-left: 20px;
+    padding-right: 500px;
+}
+
+.title {
+    font-size: 30px;
+    border-bottom: 5px solid;
+    margin-top: 20px;
+}
+
+.circle_box {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.bar {
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+    margin-left: 4%;
+    width: 40%;
+    margin-right: 4%;
+    display: inline-block;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    background-color: #d0e1bc;
+}
+
+.skills {
+    text-align: right;
+    color: white;
+}
+
+.bar p {
+    margin: 0;
+}
+
+.Python {
+    width: 80%;
+    background-color: #9fc490;
+}
+
+.C {
+    width: 90%;
+    background-color: #9fc490;
+}
+
+.Java {
+    width: 85%;
+    background-color: #9fc490;
+}
+
+.VB {
+    width: 90%;
+    background-color: #9fc490;
+}
+
+.HTML_CSS {
+    width: 90%;
+    background-color: #9fc490;
+}
+
+.JavaScript {
+    width: 90%;
+    background-color: #9fc490;
+}
+
+.JSP_ASP {
+    width: 90%;
+    background-color: #9fc490;
+}
+
+.Ps_Ai_Pr_Fl {
+    width: 95%;
+    background-color: #9fc490;
+}
+
+
+.circle_box:hover>.circle {
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+
+.circle_box:hover .circle:hover {
+    opacity: 1;
+}
+
+.bar:hover >div {
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+
+.bar:hover 
+ div:hover {
+    opacity: 1;
+}
+
+/*時間軸*/
+
+.experience {
+    left: 3240px;
+    width: 2000px;
+}
+
+.ability_middle {
+    bottom: 80px;
+    position: absolute;
+    width: 2000px;
+}
+
+.dot {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: -15px;
+    border-radius: 50%;
+    border: 10px solid;
+    background: black;
+}
+
+.one {
+    left: 250px;
+}
+
+.two {
+    left: 750px;
+}
+
+.three {
+    left: 1250px;
+}
+
+.four {
+    left: 1750px;
+}
+
+.years {
+    position: absolute;
+    width: 200px;
+    text-align: center;
+    margin-left: -90px;
+    margin-top: 30px;
+}
+.year_box {
+    overflow: hidden;
+    overflow-y: auto;
+    display: block;
+    position: absolute;
+    margin-left: -200px;
+    height: 65%;
+    width: 400px;
+    font-size: 1.2rem;
+    background: #9FC490;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    bottom: 120px;
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.year_title {
+    text-align: center;
+    border-bottom: 2px white solid;
+}
+.experience:hover .up_box>.year_box {
+    opacity: 0.5!important;
+}
+
+.experience:hover .up_box .year_box:hover>div {
+    opacity: 1!important;
+}
+
+
+
+
+
+.experience:hover .up_box>.year_box:hover {
+    opacity: 1!important;
+    transition: all 0.6s ease;
+}
+/*作品集*/
+.call {
+    left: 5240px;
+    width: 500px;
+    padding-right: 200px;
+    padding-left: 500px;
+}
+.works_list {
+    font-size: 25px;
+    padding-left: 50px;
+}
+.thank {
+    position: absolute;
+    width: 0px;
+    margin-top: calc(50% - 500px);
+    font-size: 100px;
+    left: 6640px;
+}

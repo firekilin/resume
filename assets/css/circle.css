@@ -1,0 +1,76 @@
+/*圓形進度條*/
+.circle {
+    position: relative;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+.all_circle{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 20px solid #d0e1bc;
+    transform: rotate(225deg);
+}
+.right{
+    position: absolute;
+    width: 50%;
+    height: 200px;
+    left: 50%;
+    overflow: hidden;
+}
+.rightcircle{
+    width: 110px;
+    height: 110px;
+    border:20px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    right: 0;
+    transform: rotate(-135deg);
+    border-top:20px solid #9FC490;
+    border-right:20px solid #9FC490;
+}
+
+
+.left {
+    position: absolute;
+    width: 50%;
+    height: 200px;
+    left: 0;
+    overflow: hidden;
+}
+
+.leftcircle {
+    width: 110px;
+    height: 110px;
+    border: 20px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+	transform: rotate(45deg);
+    border-top: 20px solid #9FC490;
+    border-right: 20px solid #9FC490;
+
+}
+.percents {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    font-size: 30px;
+}
+.circle_name {
+    position: absolute;
+    top: 155px;
+    text-align: center;
+    width: 150px;
+}
